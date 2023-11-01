@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+.text-primary{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.3rem;
+    padding: 4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.text-secondary{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.563rem;
+    padding: 0.313rem; 
+}
+
+.text-para{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    padding: 0.938rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.center{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    height: 28.125rem;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    height: 28.125rem;
+}
+
+#home::before{
+    content: "";
+    background-image: url("../../assets/images/bg-home.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9; 
+}
+
+
+.logo img{
+    height: 3.125rem;
+    padding: 0px 0.938rem 0px 1.25rem; 
+}
+
+.logo h3{
+    padding-top: 0.813rem; 
+    font-family: 'Lato', sans-serif;
+}
+
+.empty{
+    height: 3.75rem;
+}
+
+
+.bg-video{
+    position: absolute;
+    width: 100%;
+    margin-top: -30%;
+    height: 50vh;
+    margin-left: -5%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem;
+    position: sticky;
+    z-index: 1000;
+}
+
+header::before{
+    content: ""; 
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;  
+}
+
+
+header ul{
+    display: flex;
+}
+
+header #menu{
+    padding-top: 0.625rem;
+}
+header .menu-item {
+    list-style: none;
+}
+
+header .menu-item a{
+    text-decoration: none;
+    margin-right: 1.563rem;
+    font-size: 1.063rem;
+    font-weight: bolder;
+    font-family:  'Lato', sans-serif;
+}
+
+header .menu-item a:hover{
+   color: rgb(255, 166, 0);
+}
+
+#spots{
+    margin-bottom: 1.875rem;
+    padding-top: 3.125rem;    
+}
+
+#service-menu,
+#spot-menu{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.service-item{
+    height: 34rem
+}
+
+.service-item,
+.spot-item{
+    border: 2px solid white;
+    width: 18.75rem;
+    height: fit-content;
+    margin: 0.625rem;
+    cursor:pointer;
+}
+
+.service-item:hover,
+.spot-item:hover{
+    transform: scale(1.06);
+    background-color: rgb(41, 39, 39);
+    transition: all 0.2s ease-in-out;
+}
+
+.service-item img,
+.spot-item img{
+    height: 8.75rem;
+    padding: 0.438rem;
+}
+
+
+#quote img{
+    width: 98vw;
+    margin: 1.875rem 0 0px 0.375rem;    
+ }
+
+.booking-item{
+    height: 18rem; 
+     width: 90%;
+     margin-left: 4.5%;
+     margin-bottom: 1.5rem; 
+}
+
+.booking-item{
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out 0s;
+    cursor:pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.booking-item:hover{
+    transform: scale(1.06);
+    background-color: rgb(41, 39, 39);
+}
+
+.booking-item img{
+    margin: 0.5vh;
+    height: 35vh;
+    width: 37vh;
+    padding: 0.438rem;   
+}
+
+#upper{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#middle{
+    text-align: center;
+}
+
+#lower{
+    text-align: center;
+}
+
+#upper img{
+    height: 15rem;
+    width: 25rem;
+}
+
+#middle img{
+    height: 15rem;
+    width: 25rem;
+}
+
+#lower img{
+    height: 15rem;
+    width: 25rem;
+}
+
+a:hover{
+    background-color: black;
+    opacity: 0.7;   
+}
+
+.northspots img{
+    height:100%;
+    width:100%;
+}
+
+
+.northspots table{
+    height: 90%;
+    width: 70%;
+    margin-top: -5.5rem;
+}
+
+.td-img{
+    height: 29vh;
+    width: 35%;
+}
+
+.td-name{
+    font-size: 1.5rem;
+}
+
+.td-heading{
+    font-size: 2.3rem;
+}
+
+
+#registration{
+    height: 33.7rem;
+}
+
+#registration::before{
+    background: url('../../assets/images/bg-registration.jpeg') no-repeat center center/cover;
+    opacity: 0.7; 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#reg-form{
+    display: inline-block;
+    border: 3px solid white;
+    position: relative;
+    top: 1.25rem;
+    left: 43%;
+    padding: 1.563rem 2.5rem;
+    border-radius: 1.875rem;
+    width: 40%;
+    height:80% ;
+}
+
+#reg-form::before{
+    content: "";
+    background-color: #f55501;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left: 0;
+    border-radius: 1.875rem;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#reg-form .form-group{
+    display: block;
+    margin:auto;
+    border-bottom: 2px solid white;
+}
+
+#reg-form input{   
+    background-color: transparent;
+    border: none; 
+    outline: none;  
+}
+
+#reg-form .radiobtn{
+    display: inline;
+    width: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+::placeholder { 
+    color: white;
+}
+
+#reg-form h6{
+    display: inline;
+
+}
+
+#reg-form .gender{
+    margin-top: 1.25rem;
+}
+
+.input-class{
+    font-size: 1.85rem;
+    font-family: cursive;
+}
+
+.para1{
+    font-size: 4.5rem;
+}
+.btn{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.438rem;
+    cursor: pointer;
+    margin: 1.25rem auto;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+    font-size: 1.85rem;
+    font-family: cursive;   
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.book-button{ 
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 0.125rem;
+        border-radius: 1.438rem;
+        cursor: pointer;
+        margin: 1.25rem auto;
+        height: 20%;
+        width: 30%;
+        transition: 0.5s ease 0s;
+        font-size: 1.85rem;
+        font-family: cursive;   
+    }
+
+.book-button:hover{
+        background-color: white;
+        color: black;
+    }
+
+#footer{
+    display: flex;
+    padding: 1.25rem;
+    background-color: #0c151f;
+}
+
+.footer-item{
+    margin: 0.438rem;
+    padding: 3rem;
+}
+
+#about{
+    width: 34.375rem;
+    text-align: center;
+}
+
+#about .logo{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact{
+    width: 22.5rem ;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item{
+    display: inline-block;
+}
+
+#copyright{
+    align-self: center ;
+}
+
